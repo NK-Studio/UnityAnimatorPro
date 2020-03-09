@@ -31,8 +31,10 @@ private void Update()
 {
   //이동 애니메이션 재생
   var xx = Input.GetAxisRaw("Horizontal");
+  
+//AnimatorPro.SetParam("Parameter Name", int,flaot,bool : Value );    
   AnimatorPro.SetParam("Move", Mathf.Abs(xx));
-  //AnimatorPro.SetParam("Parameter Name", int,flaot,bool : Value   );      
+
   //공격 애니메이션 재생
   if (Input.GetKeyDown(KeyCode.Space))
      AnimatorPro.SetTrigger("Attack");
