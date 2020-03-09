@@ -4,7 +4,7 @@
 
 ###### 해당 Asset의 기능은?  
 
-현재 Animator에서 파라미터에 대하여 값을 Set, Get할 때 ```SetInteger GetInteger , SetFloat GetFloat , SetBool GetBool ... ``` 
+현재 Animator에서 파라미터에 대하여 값을 Get, Set할 때 ```SetInteger GetInteger , SetFloat GetFloat , SetBool GetBool ... ``` 
 이런식으로 제어하고자 하는 파라미터의 자료형에 맞춰 함수를 써야되는 번거로운 부분이 있습니다.
 
 하지만 AnimatorPro의 ``` SetParam GetParam ```을 사용했을 때 자료형에 맞춰 함수를 써야되는 번거로움을 벗어날 수 있습니다.
