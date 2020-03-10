@@ -12,8 +12,8 @@
 # 사용법
 
 ``` C#
-using UnityEngine.AnimatorPro;
 //상단에 해당 네임 스페이스를 추가합니다.
+using UnityEngine.AnimatorPro;
 
 //전역 변수로 AnimatorPro 자료형 객체를 선언합니다.
 private AnimatorPro AnimatorPro;
