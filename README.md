@@ -24,7 +24,7 @@ using UnityEngine.AnimatorPro;
 
 //[RequireComponent(typeof(AnimatorPro))]를 클래스 위에 추가해줍니다.
 [RequireComponent(typeof(AnimatorPro))]
-public class youClass : MonoBehaviour
+public class yourClass : MonoBehaviour
 {
 
 }
