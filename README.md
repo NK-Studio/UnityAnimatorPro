@@ -74,15 +74,15 @@ animatorPro.SetParam(ID_Move, Mathf.Abs(xx));
 ```
 ---------------------------------------------------------------------------------------
 ```c#
-[AnimatorEnter("Base Laouy.AnimClipName")]
+[AnimatorEnter("Base Layout.AnimClipName")]
 public void AttackAnimEnter() =>
    Debug.Log("공격을 Enter");
     
-[AnimatorStay("Base Laouy.AnimClipName")]
+[AnimatorStay("Base Layout.AnimClipName")]
 public void AttackAnimStay() =>
    Debug.Log("공격을 Stay");
     
-[AnimatorExit("Base Laouy.AnimClipName")]
+[AnimatorExit("Base Layout.AnimClipName")]
 public void AttackAnimExit() =>
    Debug.Log("공격을 Exit");
    
