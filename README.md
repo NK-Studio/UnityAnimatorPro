@@ -26,38 +26,36 @@ using UnityEngine.AnimatorPro;
 [RequireComponent(typeof(AnimatorPro))]
 public class yourClass : MonoBehaviour
 {
+  //전역 변수로 AnimatorPro 자료형 객체를 선언합니다.
+  private AnimatorPro animatorPro;
 
+  //사용할 Animator 자료형 객체를 선언합니다.
+  public Animator anim;
+
+  private void Awake()
+  {
+    //객체를 생성하여 할당해줍니다. 
+    animatorPro = GetComponent<AnimatorPro>();
+
+    //Init 함수에 사용할 애니메이터 넘겨줍니다.
+    animatorPro.Init(anim);
+  }
+
+  private void Update()
+  {
+    //이동 애니메이션 재생
+    var xx = Input.GetAxisRaw("Horizontal");
+
+  //animatorPro.SetParam("Parameter Name", [int, flaot, bool] : Value );
+    animatorPro.SetParam("Move", Mathf.Abs(xx));
+
+    //공격 애니메이션 재생
+    if (Input.GetKeyDown(KeyCode.Space))
+       animatorPro.SetTrigger("Attack");
+
+  //다음과 같이 Animator 자료형 변수를 사용했던 느낌 그대로 사용해주시면 되겠습니다.
+  }    
 }
-
-//전역 변수로 AnimatorPro 자료형 객체를 선언합니다.
-private AnimatorPro animatorPro;
-
-//사용할 Animator 자료형 객체를 선언합니다.
-public Animator anim;
-
-private void Awake()
-{
-  //객체를 생성하여 할당해줍니다. 
-  animatorPro = GetComponent<AnimatorPro>();
-
-  //Init 함수에 사용할 애니메이터 넘겨줍니다.
-  animatorPro.Init(anim);
-}
-
-private void Update()
-{
-  //이동 애니메이션 재생
-  var xx = Input.GetAxisRaw("Horizontal");
-  
-//animatorPro.SetParam("Parameter Name", [int, flaot, bool] : Value );
-  animatorPro.SetParam("Move", Mathf.Abs(xx));
-
-  //공격 애니메이션 재생
-  if (Input.GetKeyDown(KeyCode.Space))
-     animatorPro.SetTrigger("Attack");
-     
-//다음과 같이 Animator 자료형 변수를 사용했던 느낌 그대로 사용해주시면 되겠습니다.
-}    
 ```
 
 ---------------------------------------------------------------------------------------
