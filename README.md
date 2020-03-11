@@ -76,15 +76,15 @@ animatorPro.SetParam(ID_Move, Mathf.Abs(xx));
 ```c#
 [AnimatorEnter("Base Layout.AnimClipName")]
 public void AttackAnimEnter() =>
-   Debug.Log("공격을 Enter");
+   Debug.Log("Anim to Enter");
     
 [AnimatorStay("Base Layout.AnimClipName")]
 public void AttackAnimStay() =>
-   Debug.Log("공격을 Stay");
+   Debug.Log("Anim to Stay");
     
 [AnimatorExit("Base Layout.AnimClipName")]
 public void AttackAnimExit() =>
-   Debug.Log("공격을 Exit");
+   Debug.Log("anim to Exit");
    
 //애트리뷰트 적용으로만으로도 해당 애니메이션 상태에 따라 함수를 실행킬 수 있습니다.
    
