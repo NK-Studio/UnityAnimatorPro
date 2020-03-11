@@ -4,7 +4,7 @@
 
 ###### 해당 Asset의 기능은?  
 
-현재 Animator에서 파라미터에 대하여 값을 Set, Get할 때 ```SetInteger GetInteger , SetFloat GetFloat , SetBool GetBool ... ``` 
+현재 Animator에서 파라미터에 대하여 값을 Get, Set할 때 ```SetInteger GetInteger , SetFloat GetFloat , SetBool GetBool ... ``` 
 이런식으로 제어하고자 하는 파라미터의 자료형에 맞춰 함수를 써야되는 번거로운 부분이 있습니다.
 
 하지만 AnimatorPro의 ``` SetParam GetParam ```을 사용했을 때 자료형에 맞춰 함수를 써야되는 번거로움을 벗어날 수 있습니다.
@@ -12,6 +12,9 @@
 # 사용법
 
 ``` C#
+//상단에 해당 네임 스페이스를 추가합니다.
+using UnityEngine.AnimatorPro;
+
 //전역 변수로 AnimatorPro 자료형 객체를 선언합니다.
 private AnimatorPro AnimatorPro;
 
@@ -31,8 +34,10 @@ private void Update()
 {
   //이동 애니메이션 재생
   var xx = Input.GetAxisRaw("Horizontal");
+  
+//AnimatorPro.SetParam("Parameter Name", [int, flaot, bool] : Value );
   AnimatorPro.SetParam("Move", Mathf.Abs(xx));
-        
+
   //공격 애니메이션 재생
   if (Input.GetKeyDown(KeyCode.Space))
      AnimatorPro.SetTrigger("Attack");
