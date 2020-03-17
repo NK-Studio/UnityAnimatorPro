@@ -9,7 +9,6 @@ namespace UnityEngine
 {
     namespace AnimatorPro
     {
-        [ExecuteInEditMode]
         [DisallowMultipleComponent]
         public class AnimatorPro : MonoBehaviour
         {
@@ -26,9 +25,6 @@ namespace UnityEngine
 
                 #endregion
             }
-
-             private void Awake() => // Make the component invisible in the inspector.
-                 hideFlags = HideFlags.HideInInspector;
 
             #region ParameterPro
 
