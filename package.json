@@ -1,7 +1,7 @@
 {
   "name": "com.unity.animatorpro",
   "displayName": "AnimatorPro",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "unity": "2019.2",
   "description": "With this asset, you can use the animator's features more easily.\r\nYou can conveniently use functions and set and get parameters according to the state of the animation clip.",
   "type": "library",
