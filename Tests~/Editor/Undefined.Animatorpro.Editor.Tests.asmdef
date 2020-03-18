@@ -1,0 +1,14 @@
+{
+    "name": "Undefined.Animatorpro.Editor.Tests",
+    "references": [
+        "Undefined.Animatorpro.Editor",
+        "Undefined.Animatorpro"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

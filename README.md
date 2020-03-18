@@ -1,4 +1,4 @@
-# UnityAnimatorPro 1.0.2
+# UnityAnimatorPro 1.0.7
 
 ###### 해당 AnimatorPro는 SBS 게임아카데미 강사 - 선진송 개발자, NK Studio - 김한용 개발자가 제작하였습니다.
 

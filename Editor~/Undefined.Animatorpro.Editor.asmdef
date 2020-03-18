@@ -1,0 +1,10 @@
+{
+    "name": "Undefined.Animatorpro.Editor",
+    "references": [
+      "Undefined.Animatorpro"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
